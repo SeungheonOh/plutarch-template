@@ -1,5 +1,5 @@
 result*
-/dist-*
+*/dist-*
 .direnv
 .pre-commit-config.yaml
 .nvimrc
