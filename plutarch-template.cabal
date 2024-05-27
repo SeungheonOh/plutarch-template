@@ -1,0 +1,35 @@
+cabal-version:      3.0
+name:               plutarch-template
+version:            0.1.0.0
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             John Doe
+maintainer:         JohnDoe@example.com
+extra-source-files: README.md
+tested-with:        GHC ==9.6.4
+
+common common
+  ghc-options: -Wall
+
+executable plutarch-template
+  import:           common
+  main-is:          Main.hs
+
+  -- other-modules:
+  -- other-extensions:
+  build-depends:
+    , base                   >=4.9   && <5
+    , base16-bytestring
+    , bytestring
+    , containers
+    , cryptonite
+    , data-default
+    , flat
+    , liqwid-plutarch-extra
+    , plutarch               ==1.4.0
+    , plutus-core
+    , plutus-ledger-api
+    , text
+
+  hs-source-dirs:   app
+  default-language: Haskell2010
